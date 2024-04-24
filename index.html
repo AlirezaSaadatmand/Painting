@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #e7e7e7;
+        }
+        
+        #contaner {
+            display: flex;
+        }
+        
+        #sideR {
+            position: absolute;
+            width: 10%;
+            height: 400px;
+        }
+        
+        .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            position: relative;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 10%;
+            box-shadow: 2px 2px 15px black, -3px -3px 10px white, inset 1px 1px 5px black, inset -1px -1px 5px white;
+        }
+        
+        #red {
+            background-color: red;
+        }
+        
+        #black {
+            background-color: black;
+        }
+        
+        #green {
+            background-color: green;
+        }
+        
+        #white {
+            background-color: white;
+        }
+        
+        #blue {
+            background-color: blue;
+        }
+        
+        #yellow {
+            background-color: yellow;
+        }
+        
+        #label {
+            text-align: center;
+            font-size: 2rem;
+            margin: 40%;
+        }
+        
+        #range {
+            margin: 20%;
+        }
+        
+        #clear {
+            background-color: #e7e7e7;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contaner">
+        <div id="sideL">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div id="sideR">
+            <div>
+                <label for="range" id="label">size</label><br>
+                <input type="range" id="range" max="100" min="5">
+            </div>
+            <div id="clear" onclick="ClearBoard()" class="icon"></div>
+            <div id="black" class="icon"></div>
+            <div id="red" class="icon"></div>
+            <div id="blue" class="icon"></div>
+            <div id="green" class="icon"></div>
+            <div id="white" class="icon"></div>
+            <div id="yellow" class="icon"></div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
